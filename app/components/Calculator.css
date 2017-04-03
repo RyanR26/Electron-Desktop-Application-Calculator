@@ -1,0 +1,85 @@
+.calc {
+  font-family: 'Oxygen', sans-serif;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  clear: both;
+  background: black;
+  font-size: 20px;
+  box-shadow: 0px 0px 37px -4px rgba(0,0,0,0.75);
+  text-align: center;
+  min-width: 300px;
+}
+
+.calc:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.calcButtonContainer {
+
+}
+
+.calcButton {
+  display: block;
+  cursor: pointer;
+  width: 25%;
+  float: left;
+  padding: 20px 0;
+  color: white;
+  background: rgba(255,255,255,0.15);
+  outline: 1px solid black;
+  border: none;
+  font-size: 20px;
+}
+
+.calcButton:hover {
+  background: rgba(255,255,255,0.15);
+  color: orange;
+}
+
+.calcButton:active {
+  box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,0.5);
+}
+
+.calcButton.action.equals {
+  background: #a50000;
+}
+
+.calcButton.action.equals:hover {
+  background: green;
+}
+
+.calcButton:nth-child(-n+2) {
+  width: 50%;
+}
+
+.calcScreen {
+  background: black;
+  color: white;
+}
+
+.calcScreenMain {
+  width: 100%;
+  height: 200px;
+  line-height: 200px;
+  font-size: 50px;
+  clear: both;
+  overflow: hidden;
+}
+
+.calcScreenSub {
+  outline: 1px solid black;
+  width: 40%;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  color: black;
+  background: orange;
+  font-weight: bold;
+}
+
+.calcScreenOperator {
+  width: 20%;
+}
